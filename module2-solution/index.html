@@ -2,19 +2,54 @@
 <html>
 <head>
 	<title>Our Menu</title>
+	<style>
+
+	/*****Base Styles*****/
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+
+		#box {
+			background-color: pink;
+			padding: 10px;
+			border: 1px solid black;
+			width: 120px;
+			overflow: auto;
+		}
+
+		p {
+			width: 300px;
+			height: 300px;
+			border: 1px solid black;
+		}
+	/*****Large devices only*****/
+	@media (min-width:  1200px) {
+		#p1 {
+			width: 80%;
+		}
+		#p2 {
+			width: 80%
+		}
+		#p3 {
+			width: 80%;
+		}
+	}
+	</style>
 </head>
 <body>
 	<section>
-		<h1>Chicken</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		<h1 id="box">Chicken</h1>
+		<p id="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 	</section>
 	<section>
 		<h1>Beef</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		<p id="p2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 	</section>
 	<section>
 		<h1>Sushi</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		<p id="p3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 	</section>
 </body>
 </html>
