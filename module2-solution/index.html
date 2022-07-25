@@ -12,48 +12,48 @@
 	margin: 0;
 	padding: 0;
 }
+
 h1 {
 	text-align: center;
 	margin-top: 2%;
 	margin-bottom: 2%;
 }
 
-p {
-	width: 90%;
-	float:  left;
-	margin-right: 10px;
-	margin-left: 10px;
+.item {
+	background-color: #a8a396;
+	border:	1px solid black;
+	position: relative;
+	top: 0;
+	margin: 15px;
+	padding: 25px;
 }
 
 h2 {
-	border: 1px solid black;
-	width: 100px;
 	text-align: center;
-	margin-left: 82.5%;
-	margin-bottom: 0;
-	margin-top: 0;
+	position: absolute;
+	top: 0;
+	right: 0;
+	border-left: 1px solid black;
+	border-bottom: 1px solid black;
+	padding-right: 5px;
+	padding-left: 5px;
 }
 
 section {
-	border:	1px solid black;
-	background-color: #a8a396;
 	width: 90%;
-	height: 100px;
-	color: black;
 	position: relative;
-	overflow: auto;
 }
 
-.chicken {
+#chicken {
 	background-color: #fcb1ac;
 }
 
-.beef {
+#beef {
 	background-color: #f2493d;
 	color: white;
 }
 
-.sushi {
+#sushi {
 	background-color: #fdff8c;
 }
 
@@ -194,20 +194,20 @@ section {
 <h1>Our Menu</h1>
 <div class="row">
 	<div class="col-lg-4 col-md-6 col-sm-12">
-	<section>
-	<h2 class="chicken">Chicken</h2>
+	<section class="item">
+	<h2 id="chicken">Chicken</h2>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 	</section>
 	</div>
 	<div class="col-lg-4 col-md-6 col-sm-12">
-	<section>
-	<h2 class="beef">Beef</h2>
+	<section class="item">
+	<h2 id="beef">Beef</h2>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 	</section>
 	</div>
-	<div class="col-lg-4 col-md-6 col-sm-12">
-	<section>
-	<h2 class="sushi">Sushi</h2>
+	<div class="col-lg-4 col-md-12 col-sm-12">
+	<section class="item">
+	<h2 id="sushi">Sushi</h2>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 	</section>
 	</div>
